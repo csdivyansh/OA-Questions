@@ -1,0 +1,42 @@
+
+Problem Statement:  
+In the mystical kingdom of Palindoria, a grand library holds an ancient collection of enchanted scrolls. Each scroll contains a unique word, written in a magical language. The kingdom’s wizard, Aric, has uncovered a powerful spell—when two scrolls are placed side by side, they may form a   palindromic incantation  . A   palindrome   is a sequence that reads the same forward and backward.  
+
+The king has ordered Aric to find all possible   pairs of scrolls   that can be combined to form a palindrome. However, there are strict rules:  
+1. A scroll cannot be paired with itself.  
+2. Each scroll can only be used   as is  , without rearranging the letters.  
+3. Aric must find the pairs   as quickly as possible  , for the spell’s power fades with time.  
+
+Aric seeks the help of the kingdom’s greatest minds to solve this challenge efficiently. Given a   list of scrolls (words)  , can you help him find all valid   palindrome pairs  ? The fate of Palindoria’s magic depends on your solution!  
+
+ Constraints:    
+    1 ≤ words.length ≤ 10⁴    
+    1 ≤ words[i].length ≤ 1000    
+     Each word is   unique    
+
+Find the pairs of indices where the words form palindromes when combined!
+
+Example 1 : 
+Input: words:
+ pqrs srqp lls s sssll
+Output: 
+[0,1] [1,0] [3,2] [2,4]
+Explanation: 
+The palindromes are ["pqrssrqp","srqppqrs","slls","llssssll"]
+
+Input0:
+hat tah cat
+Output0:
+ [0 1] [1 0]
+Input1:
+bat tab app p pp
+Output1:
+ [0 1] [1 0] [4 2] [4 3] [3 4]
+Input2:
+bat tab app
+Output2:
+ [0 1] [1 0]
+Input3:
+ a  ba
+Output3:
+ [0 1]
