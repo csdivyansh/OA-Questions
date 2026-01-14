@@ -1,0 +1,64 @@
+Problem Statement: A company developing an intelligent document management platform is building a feature that helps users detect and quantify differences between two versions of a text. This functionality is crucial for applications like automated proofreading, plagiarism detection, version control, and collaborative editing tools.
+In many scenarios, users need to know how much effort it would take to transform one version of a document (or word) into another — for instance, when comparing a draft with a final version or tracking edits made by different contributors. To quantify the similarity between two words, the system uses a metric known as edit distance, which measures the minimum number of operations required to convert one string into another.
+The allowed operations are:
+Insertion of a character (e.g., from "cat" to "cart")
+Deletion of a character (e.g., from "cats" to "cat")
+Replacement of a character (e.g., from "cat" to "cut")
+You are tasked with implementing the core logic of this feature. Given two strings, word1 and word2, your program should return the minimum number of operations needed to convert word1 into word2 using the above operations.
+This tool will be used across various modules in the document management platform, including version comparison, intelligent suggestions, and user edit tracking. It must be accurate and efficient, especially when comparing large numbers of word pairs in real-time.
+Given two strings word1 and word2, return the minimum number of operations required to convert word1 into word2, where the permitted operations are insert, delete, and replace a character.
+This assessment evaluates a candidate's understanding of dynamic programming, string manipulation, and optimization strategies in the context of real-world applications like text analysis and document comparison.
+
+Constraints:
+0 <= word1.length, word2.length <= 500
+word1 and word2 consist of lowercase English letters.
+
+Example 1:
+Input: word1 = "horse", word2 = "ros"
+Output: 3
+Explanation: 
+horse -> rorse (replace 'h' with 'r')
+rorse -> rose (remove 'r')
+rose -> ros (remove 'e')
+
+Example 2:
+Input: word1 = "intention", word2 = "execution"
+Output: 5
+Explanation: 
+intention -> inention (remove 't')
+inention -> enention (replace 'i' with 'e')
+enention -> exention (replace 'n' with 'x')
+exention -> exection (replace 'n' with 'c')
+exection -> execution (insert 'u')
+ 
+
+Input0:
+coding
+code
+Output0:
+3
+Input1:
+assessment
+test
+Output1:
+7
+Input2:
+prepare
+prep
+Output2:
+3
+Input3:
+njjfjsjsd
+nhhj
+Output3:
+7
+Input4:
+asdfgfds
+asew
+Output4:
+6
+Input5:
+asewrtyuh
+qwe
+Output5:
+8
