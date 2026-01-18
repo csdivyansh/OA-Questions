@@ -1,0 +1,56 @@
+Microsoft OA Question 🔥🔥 Hard
+Topic: Challenge
+
+
+Problem Statement:  The Ministry of Education has launched a nationwide initiative — the National Student Tech League (NSTL) — aimed at fostering innovation, problem-solving, and collaboration among school students in the field of technology. As part of the NSTL, students from various schools are grouped into teams that participate in tech-based challenges ranging from software design and robotics to data analytics and AI problem-solving.
+In an effort to ensure fair competition and equal opportunity, the NSTL organizers are faced with a unique logistical challenge. Each participating student has been assigned a readiness score, an integer that reflects their preparedness for the competition. This score is derived from internal school assessments, past competition results, and aptitude tests conducted by the league. These scores are submitted to the central NSTL platform in the form of a list.
+Now, the organizers want to divide the students into exactly two teams — Team Phoenix and Team Orion — such that:
+Every student is assigned to only one of the two teams.
+
+
+Both teams must be non-empty — meaning no team should be left without students.
+
+
+The average readiness score (i.e., the total score divided by the number of students) of both teams must be exactly the same.
+
+
+The intention behind this division is to promote equity and balanced competition, ensuring that neither team has a statistical advantage in terms of preparation level. Such fairness is critical in the NSTL’s vision of encouraging team dynamics, creative thinking, and collaborative problem-solving across a level playing field.
+Your task is to determine whether it is possible to divide the given list of students into two such groups under the above constraints. The challenge lies in not just randomly splitting the students, but ensuring that the mathematical average of their scores remains equal across both teams. This will involve a deeper understanding of how subsets and averages work, particularly when dealing with integers of varying magnitudes and distributions.
+This problem is not just theoretical. In the real world, similar challenges occur in sports team drafts, school project groupings, company team assignments, and even load balancing in server management — where fairness, efficiency, or balance is required across groups based on some quantitative metric.
+As part of the Student Innovation & Analytics Department, your solution will play a key role in helping automate and verify team divisions across thousands of students nationally. You are required to develop a solution or methodology that, when given the list of readiness scores, can determine whether such a fair division is possible. The accuracy of this system is essential for maintaining the integrity and fairness of the NSTL process, and ultimately, for fostering an inclusive and competitive environment for all participating students.
+
+Constraints:
+1 <= nums.length <= 30
+0 <= nums[i] <= 10^4
+
+Example 1:
+Input: nums = [1,2,3,4,5,6,7,8]
+Output: true
+Explanation: We can split the array into [1,4,5,8] and [2,3,6,7], and both of them have an average of 4.5.
+Example 2:
+Input: nums = [3,1]
+Output: false
+Input0:
+1 3 4 6
+Output0:
+true
+Input1:
+2 1 4 5 7 9 10
+Output1:
+false
+Input2:
+1 4 2 6 2
+Output2:
+true
+Input3:
+1 4 2 6 2 17
+Output3:
+false
+Input4:
+1 10 9 30 25
+Output4:
+false
+Input5:
+2 1 4 5 7 9
+Output5:
+true
