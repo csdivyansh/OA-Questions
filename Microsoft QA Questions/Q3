@@ -1,0 +1,54 @@
+Microsoft OA Question 🔥🔥 Hard
+Topic: Challenge
+
+
+Problem Statement: In a digital library system, books are categorized and arranged in a hierarchical structure based on genres, sub-genres, and specific topics. Each node in this structure represents a category, and it may have a left and right subcategory. The library administrators use a binary tree to represent this hierarchy, where each node stores a category name and pointers to its left and right child categories.
+To improve user experience, the system needs to display all available categories in a logically sorted sequence. The sequence should ensure that users can explore subcategories of a genre before and after visiting a central category — similar to how books are ordered in physical libraries, with side topics and then main topics followed by related ones.
+The software engineering team has determined that performing an in-order traversal of the binary category tree will achieve this objective. During in-order traversal, the system visits the left child (subcategory), then the current node (category), and finally the right child (another subcategory). This ensures a natural and hierarchical reading flow through the digital catalog.
+Your task is to implement a function that, given the root node of the category tree, returns the in-order traversal of all the categories. This will help the library interface display them in a user-friendly and logical sequence. The returned order will be used by the frontend interface to present categories from left-most sub-genres to right-most, passing through their parent genres in an intuitive browsing path.
+This task will assess your understanding of binary tree traversal, recursive logic, and the ability to apply data structures to practical, user-facing software systems in a meaningful way.
+
+Constraints:
+The number of nodes in the tree is in the range [0, 100].
+-100 <= Node.val <= 100
+
+Example 1:
+Input: root = [1,null,2,3]
+Output: [1,3,2]
+
+Example 2:
+Input: root = [1,2,3,4,5,null,8,null,null,6,7,9]
+Output: [4,2,6,5,7,1,3,9,8]
+
+Example 3:
+Input: root = []
+Output: []
+
+Example 4:
+Input: root = [1]
+Output: [1] 
+
+Input0:
+1 2 null null 3 null 5
+Output0:
+2 3 5 1
+Input1:
+3 4 2 null 4 7
+Output1:
+4 4 3 7 2
+Input2:
+11 20
+Output2:
+20 11
+Input3:
+1 null
+Output3:
+1
+Input4:
+20 22 11 20 null
+Output4:
+20 22 20 11
+Input5:
+3 5 null 6 7 null 8 
+Output5:
+6 8 5 7 3
