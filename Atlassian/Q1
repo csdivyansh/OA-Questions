@@ -1,0 +1,51 @@
+Atlassian OA Question 🔥🔥 Hard
+Topic: Challenge
+
+
+Problem Statement: The management team at a popular movie theater is organizing a special "Friends' Movie Night." For this event, friends have been pre-assigned to seats in a single row consisting of an even number of seats. Each friend is uniquely identified and is expected to sit together during the show to enhance their experience.
+However, due to a last-minute seating error, the guests were not properly guided to their assigned seats. As a result, the individuals are currently seated randomly across the row. Each person is identified with a unique ID, and friends are always assigned consecutive IDs — for example, couple one is (0, 1), couple two is (2, 3), and so on.
+The theater ushers now face a challenge: they want to make sure each couple is sitting side by side without causing too much disruption before the movie begins. To achieve this, they are allowed to perform seat swaps — each swap involves any two people getting up and switching seats, regardless of where they are in the row.
+Your task is to determine the minimum number of seat swaps required so that all friends end up sitting next to each other. Efficiency is key since the movie is about to start, and the ushers want to resolve the situation with as few swaps as possible.
+This real-world scenario emphasizes optimization and minimal disruption in a logistical arrangement problem, which can commonly occur in event planning, transportation seating, or group assignments in various industries. Your solution will help the ushers restore order quickly, ensuring all friends can enjoy the evening together with their partners.
+
+Constraints:
+2n == row.length
+2 <= n <= 30
+n is even.
+0 <= row[i] < 2n
+All the elements of row are unique.
+
+Example 1:
+Input: row = [0,2,1,3]
+Output: 1
+Explanation: We only need to swap the second (row[1]) and third (row[2]) person.
+
+Example 2:
+Input: row = [3,2,0,1]
+Output: 0
+Explanation: All friends are already seated side by side.
+
+Input0:
+3 2 0 1 8 9 4 6
+Output0:
+1
+Input1:
+3 2 6 9 0 1
+Output1:
+1
+Input2:
+6 0 8 5 4 7
+Output2:
+2
+Input3:
+7 0 8 5 4 3 6 2
+Output3:
+4
+Input4:
+6 8 9 0 2 3 4 1 7 5
+Output4:
+3
+Input5:
+1 2 0 8
+Output5:
+2
