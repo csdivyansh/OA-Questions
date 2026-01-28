@@ -1,0 +1,64 @@
+LinkedIn OA Question 🔥🔥 Hard
+Topic: Challenge
+
+
+Problem Statement: A warehouse management system uses string identifiers to represent the layout of products on shelves. Each character in a string represents a unique product, and its position in the string denotes its physical placement on a shelf (from left to right). For example, the string s = "ABCD" means product A is on the first position, B on the second, and so on.
+Due to operational needs, the warehouse occasionally reorganizes the shelf layout. After such an event, the new layout is recorded as another string t, which is a permutation of the original layout s (all products are still present, just rearranged).
+Reorganizing shelves comes with a cost — the farther a product is moved from its original position, the more effort and time it requires. To quantify this, the warehouse calculates a "reorganization cost" as the sum of the absolute differences between each product's original index in s and its new index in t.
+Your task is to write a function that computes the total reorganization cost given the original layout s and the new layout t. This calculation will help optimize future reorganizations and allocate labor resources more effectively.
+Constraints:
+1 <= s.length <= 26
+Each character occurs at most once in s.
+t is a permutation of s.
+s consists only of lowercase English letters.
+
+Example 1:
+Input: s = "abc", t = "bac"
+Output: 2
+Explanation:
+For s = "abc" and t = "bac", the permutation difference of s and t is equal to the sum of:
+The absolute difference between the index of the occurrence of "a" in s and the index of the occurrence of "a" in t.
+The absolute difference between the index of the occurrence of "b" in s and the index of the occurrence of "b" in t.
+The absolute difference between the index of the occurrence of "c" in s and the index of the occurrence of "c" in t.
+That is, the permutation difference between s and t is equal to |0 - 1| + |1 - 0| + |2 - 2| = 2.
+
+Example 2:
+Input: s = "abcde", t = "edbac"
+Output: 12
+Explanation: The permutation difference between s and t is equal to |0 - 3| + |1 - 2| + |2 - 4| + |3 - 1| + |4 - 0| = 12.
+
+Input0:
+prep
+rpep
+Output0:
+3
+
+Input1:
+code
+edoc
+Output1:
+8
+
+Input2:
+input
+putni
+Output2:
+12
+
+Input3:
+role
+elor
+Output3:
+8
+
+Input4:
+java
+aajv
+Output4:
+8
+
+Input5:
+ab
+ba
+Output5:
+2
