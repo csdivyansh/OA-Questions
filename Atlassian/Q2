@@ -1,0 +1,48 @@
+Atlassian OA Question 🔥🔥
+Topic:
+
+
+Problem Statement: You are working as a backend engineer for a digital marketing analytics platform that helps clients optimize their advertising campaigns. One of your clients runs promotions by generating visually appealing numerical slogans using existing product or campaign identifiers. These identifiers are non-negative integers, and the goal is to arrange them in such a way that they form the largest possible number when concatenated. The resulting number is used as a unique promotional code to maximize visibility and engagement on digital banners.
+Due to the size and structure of these identifier lists, your solution must be optimized for performance and correctness. Simply sorting the numbers in descending order is insufficient, as the optimal arrangement depends on the combination of digits when concatenated, not their individual values.
+You are tasked with developing a function that accepts a list of non-negative integers (nums[]) and returns a string representing the largest number that can be formed by concatenating the integers. Since the result could exceed typical numeric data type limits, it must be returned as a string. Your solution should efficiently handle edge cases, such as multiple zeros or very large.
+Constraints:
+1 <= nums.length <= 100
+0 <= nums[i] <= 10^9
+
+
+Example 1:
+Input: nums = [10,2]
+Output: "210"
+
+Example 2:
+Input: nums = [3,30,34,5,9]
+Output: "9534330"
+ 
+
+
+Input0:
+3 30 5 9
+Output0:
+95330
+Input1:
+30 5 9
+Output1:
+9530
+Input2:
+20 3 41
+Output2:
+41320
+Input3:
+1 1 12
+Output3:
+1211
+
+Input4:
+1 1 12 20
+Output4:
+201211
+
+Input5:
+1 1 12 20 21 2
+Output5:
+221201211
