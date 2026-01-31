@@ -1,0 +1,59 @@
+Axis Bank OA Question 🔥🔥
+Topic: Challenge
+
+
+Problem Statement: In an automated packaging facility, a circular conveyor belt is used to transport packages between different workstations. Each package on the belt is tagged with a unique identifier, and their current arrangement on the belt is represented by an integer array nums. Due to operational needs, the conveyor belt must occasionally perform a controlled rotation to the right by k steps. This means each package moves k positions forward, and packages that move past the last position wrap around to the front of the belt, preserving the circular nature of the system.
+Such rotations are used to realign packages for sorting, quality inspection, or batch distribution. Ensuring that the package order is accurately updated after the rotation is critical for system synchronization and downstream processing.
+You are tasked with developing a function that takes two inputs — an integer array nums representing the current order of packages on the belt, and a non-negative integer k indicating the number of steps to rotate the conveyor belt to the right. Your function should return the new arrangement of packages after the rotation is applied.
+Constraints:
+1 <= nums.length <= 10^5
+-2^31 <= nums[i] <= 2^31 - 1
+0 <= k <= 10^5
+
+Example 1:
+Input: nums = [1,2,3,4,5,6,7], k = 3
+Output: [5,6,7,1,2,3,4]
+Explanation:
+rotate 1 steps to the right: [7,1,2,3,4,5,6]
+rotate 2 steps to the right: [6,7,1,2,3,4,5]
+rotate 3 steps to the right: [5,6,7,1,2,3,4]
+
+Example 2:
+Input: nums = [-1,-100,3,99], k = 2
+Output: [3,99,-1,-100]
+Explanation: 
+rotate 1 steps to the right: [99,-1,-100,3]
+rotate 2 steps to the right: [3,99,-1,-100]
+
+Input0:
+1 2 3 4 5 6 7
+4
+Output0:
+4 5 6 7 1 2 3
+Input1:
+1 2 3
+2
+Output1:
+2 3 1
+Input2:
+2 4 6 3 4 3
+4
+Output2:
+6 3 4 3 2 4
+
+Input3:
+1 4 6 8 2
+4
+Output3:
+4 6 8 2 1
+
+Input4:
+2 4 6 1 3 7 8 9 
+3
+Output4:
+7 8 9 2 4 6 1 3
+Input5:
+1 2 3
+2
+Output5:
+2 3 1
